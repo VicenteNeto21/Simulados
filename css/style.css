@@ -43,10 +43,11 @@ body {
 /* Dentro de cada tela tem um  */
 .teladesobreposicao-cont {
     background-color: rgb(211, 211, 211);
-    color: #260d33;
+    border-radius: 20px;
     width: 100%;
     text-align: center;
     justify-content: center;
+    width: 30%;
 }
 
 .gradiente-laranja {
@@ -91,6 +92,13 @@ body {
     border: 1px solid #7A47FF;
     color: white;
     font-size: 11pt;
+}
+
+.btn-invisivel{
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
 /* >>>>>>>>>>CSS da nav bar */
@@ -142,4 +150,103 @@ body {
 
 .btn-meio{
     text-align: center;
+}
+
+.botao-texto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+textarea,
+select.custom-select {
+    border: 2px solid #4d4d4d;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+textarea:focus,
+select.custom-select:focus {
+    outline: none;
+    border-color: #6c757d;
+    background-color: rgb(230, 230, 230);
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover,
+textarea:hover,
+select.custom-select:hover {
+    border: 2px solid #4d4d4d;
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input {
+    display: block;
+    border-radius: 10px;
+    border: 2px solid #4d4d4d;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+fieldset,
+.desativado {
+    border: none;
+    transition: none;
+}
+
+fieldset:hover,
+.desativado:hover {
+    border: none;
+    border-radius: 10px !important;
+    transition: none;
+}
+
+select.custom-select {
+    height: 30px;
+}
+
+label {
+    color: rgba(38, 13, 51, 1);
+    font-size: large;
+    padding-left: 5px;
+}
+
+.forms {
+    padding: 20px 30px 20px 20px;
+    text-align: left;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: max-content;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.form-control textarea {
+    resize: vertical;
+}
+
+textarea {
+    resize: vertical;
+    margin-top: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
 }
