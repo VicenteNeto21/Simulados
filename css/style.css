@@ -3,6 +3,33 @@ body {
     margin: 0;
 }
 
+/*>>>>>>>>>>>CSS PARA IMAGENS*/
+
+img#logo-navbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+}
+
+img#logo-media {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 250px;
+    padding: 20px;
+}
+
+img#logo-grande {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 500px;
+    padding: 20px;
+}
+
+
 /* Essa div é para telas que usam mais de uma tela */
 .principal {
     height: 100vh;
@@ -48,6 +75,7 @@ body {
     text-align: center;
     justify-content: center;
     width: 30%;
+    padding: 5px;
 }
 
 .gradiente-laranja {
@@ -63,11 +91,18 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .btn-grande {
     width: 28.125rem;
     height: 3.4375rem;
+    flex-shrink: 0;
+}
+
+.btn-medio{
+    width: 10.125rem;
+    height: 2.5rem;
     flex-shrink: 0;
 }
 
@@ -83,6 +118,11 @@ body {
     border: 1px solid rgb(230, 78, 4);
     color: white;
     font-size: 11pt;
+}
+
+.btn-laranja:hover{
+    background-color: #B33E00;
+    border: 1px solid #B33E00;
     cursor: pointer;
 }
 
@@ -92,6 +132,13 @@ body {
     border: 1px solid #7A47FF;
     color: white;
     font-size: 11pt;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn-roxo:hover{
+    background-color: #3E2480;
+    border: 1px solid #3E2480;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .btn-invisivel{
