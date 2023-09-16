@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;400;600;900&display=swap');
+
 body {
     font-family: 'Lexend Deca', sans-serif;
     margin: 0;
@@ -196,7 +198,7 @@ img#logo-grande {
 }
 
 .btn-meio{
-    text-align: center;
+    text-align: center !important;
 }
 
 .botao-texto {
@@ -214,6 +216,7 @@ select.custom-select {
     background-color: transparent;
     width: 100%;
     transition: background-color 0.3s ease-in-out;
+    width: 100%;
 }
 
 input[type=text]:focus,
@@ -262,11 +265,11 @@ fieldset:hover,
 }
 
 select.custom-select {
-    height: 30px;
+    height: 35px;
 }
 
 label {
-    color: rgba(38, 13, 51, 1);
+    color: rgb(0, 0, 0);
     font-size: large;
     padding-left: 5px;
 }
@@ -296,4 +299,26 @@ textarea {
 
 .form-group {
     margin-bottom: 20px;
+}
+
+.divEscondida{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.card-borda{
+    background-color: #fff9f6;
+    margin:100px auto;
+    border: 5px solid rgb(230, 78, 4);
+    border-radius: 15px;
+    width: 35%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
 }
