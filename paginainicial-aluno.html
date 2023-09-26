@@ -23,12 +23,10 @@
 
             btnlogin.addEventListener("click", function () {
                 telaLogin.classList.add("active");//exibe a tela de saída
-                principal.style.filter = "blur(5px)";//Aplica o desfoque ao fundo
             });
 
             fecharTela.forEach(function (btn) { //função para que todos os btn-fechar fechem os conteudos
                 btn.addEventListener("click", function () {
-                    principal.style.filter = "blur(0)"; // Remove o desfoque do fundo
                     telaLogin.classList.remove("active");//exibe a tela de saída
 
                 });
@@ -44,7 +42,6 @@
             <div class="navbar-logo">
                 <img src="images/logobrancovermelho.png" alt="">
             </div>
-
             <div class="navbar-cont centralizador">
                 <button class="btn btn-pequeno btn-laranja espaco-btn btn-login">
                     Log-in
@@ -57,9 +54,14 @@
             </div>
 
         </nav>
-        <h1 style="text-align: center;margin-top: 100px;">A sua plataforma de estudos</h1>
-        <div class="btn-meio">
-            <button class="btn btn-laranja btn-grande centralizador">Cadastre-se</button>
+        <div style="text-align: center;">
+
+            <h1 style="text-align: center;margin-top: 100px;">A sua plataforma de estudos</h1>
+            <div style="display: inline-flex;" class=" btn-meio centralizador">
+                <input type="email" class="form-control espaco-btn" name="email" id="email" placeholder="Digite o seu email">
+                <input type="password" class="form-control espaco-btn" name="senha" id="senha" placeholder="Sua senha">
+                <button class="btn btn-laranja btn-medio centralizador">Cadastre-se <span class="material-symbols-outlined">arrow_forward</span></button>
+            </div>
         </div>
     </div>
 
@@ -73,6 +75,7 @@
 
                 </button>
             </div>
+            <span>Entrar na plataforma</span>
             <form class="forms">
                 <div class="form-group">
                     <label class="text-left" for="login">login</label>
@@ -90,10 +93,14 @@
                     </a>
                 </div>
 
+
+
             </form>
         </div>
 
     </div>
+
+    
 </body>
 
 </html>

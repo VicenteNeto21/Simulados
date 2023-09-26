@@ -36,6 +36,7 @@ img#logo-grande {
 .principal {
     height: 100vh;
     filter: blur(0);
+    /* nao usar ↑ */
     transition: filter 0.3s ease-in-out;
     align-items: center;
     justify-content: center;
@@ -102,7 +103,7 @@ img#logo-grande {
     flex-shrink: 0;
 }
 
-.btn-medio{
+.btn-medio {
     width: 10.125rem;
     height: 2.5rem;
     flex-shrink: 0;
@@ -122,7 +123,7 @@ img#logo-grande {
     font-size: 11pt;
 }
 
-.btn-laranja:hover{
+.btn-laranja:hover {
     background-color: #B33E00;
     border: 1px solid #B33E00;
     cursor: pointer;
@@ -136,14 +137,15 @@ img#logo-grande {
     font-size: 11pt;
     transition: background-color 0.3s ease-in-out;
 }
-.btn-roxo:hover{
+
+.btn-roxo:hover {
     background-color: #3E2480;
     border: 1px solid #3E2480;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
-.btn-invisivel{
+.btn-invisivel {
     text-align: center;
     background-color: transparent;
     border: 1px solid transparent;
@@ -193,11 +195,11 @@ img#logo-grande {
     justify-content: center;
 }
 
-.espaco-btn{
+.espaco-btn {
     margin-right: 20px;
 }
 
-.btn-meio{
+.btn-meio {
     text-align: center !important;
 }
 
@@ -206,7 +208,61 @@ img#logo-grande {
     margin-bottom: 20px;
 }
 
+.teste {
+    max-width: 400px;
+    /* Defina a largura máxima que você deseja */
+    margin: 0 auto;
+    /* Isso centralizará horizontalmente a div */
+    text-align: center;
+}
+
+input,
+select.custom-select,
 input[type=text],
+input[type=password],
+input[type=email],
+textarea {
+    background-color: #1f223010;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+input,
+select.custom-select,
+input[type=text],
+input[type=password],
+input[type=email],
+textarea {
+    width: 90%;
+    height: 30px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    /* font-weight: bold; */
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+input:hover,
+input:focus,
+input-group:hover input {
+    outline: none;
+    border-color: #B33E00;
+}
+
+input-group:hover label,
+input:focus {
+    color: #B33E00;
+}
+
+/* input[type=text],
 input[type=password],
 input[type=email],
 textarea,
@@ -249,7 +305,7 @@ input {
     width: 100%;
     padding: 5px;
     margin-top: 5px;
-}
+} */
 
 fieldset,
 .desativado {
@@ -266,6 +322,7 @@ fieldset:hover,
 
 select.custom-select {
     height: 35px;
+    width: 99%;
 }
 
 label {
@@ -281,7 +338,7 @@ label {
 
 .form-control {
     display: block;
-    width: 100%;
+    /* width: 100%; */
     height: max-content;
     font-size: 1rem;
     line-height: 1.5;
@@ -301,18 +358,18 @@ textarea {
     margin-bottom: 20px;
 }
 
-.divEscondida{
+.divEscondida {
     display: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
-.card-borda{
+.card-borda {
     background-color: #fff9f6;
-    margin:100px auto;
+    margin: 100px auto;
     border: 5px solid rgb(230, 78, 4);
     border-radius: 15px;
     width: 35%;
